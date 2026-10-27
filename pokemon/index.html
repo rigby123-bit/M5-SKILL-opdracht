@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="search-bar">
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Zoek een Pokémon (naam of nummer)" autocomplete="off" required>
+            <button type="submit">Zoeken</button>
+        </form>
+        <p class="error" id="error"></p>
+    </header>
+
+    <main class="pokemon">
+        <section class="pokemon-info">
+            <h2 class="name" id="name">Pokémon name</h2>
+            <div class="types" id="types"></div>
+        </section>
+
+        <section class="pokemon-image">
+            <img class="image" id="image" src="https://placehold.co/300x300?text=Pokemon" alt="Pokémon placeholder">
+        </section>
+
+        <section class="pokemon-stats">
+            <ul>
+                <li class="stat">HP: —</li>
+                <li class="stat">Attack: —</li>
+                <li class="stat">Defense: —</li>
+                <li class="stat">Special Attack: —</li>
+                <li class="stat">Special Defense: —</li>
+                <li class="stat">Speed: —</li>
+            </ul>
+        </section>
+
+        <section class="pokemon-moves">
+            <ul id="moves"></ul>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
